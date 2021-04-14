@@ -21,7 +21,7 @@ stage('build')
  
  stage('Nexus')
  {
- sh "${mavenHome}/bin/mvn deploy
+ sh "${mavenHome}/bin/mvn deploy"
  }
 
  stage('tomcat')
