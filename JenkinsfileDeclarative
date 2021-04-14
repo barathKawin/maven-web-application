@@ -20,7 +20,7 @@ options {
    stage('CheckoutCode')
    {
      steps{
-	 git branch: 'development', credentialsId: '8e348aa2-9531-4dbe-863d-1adb64897470', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+	 git branch: 'development', credentialsId: '8e348aa2-9531-4dbe-863d-1adb64897470', url: 'https://github.com/barathKawin/maven-web-application.git'
 	 }
    }
    
@@ -38,7 +38,7 @@ options {
 	 }
    }
    
-   /* stage('UploadArtifactintoNexus')
+   stage('UploadArtifactintoNexus')
    {
      steps{
 	  sh "mvn deploy"
@@ -52,6 +52,6 @@ options {
   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.234.186.239:/opt/apache-tomcat-9.0.45/webapps/"
     } 
    }
- } */
+ }
 }
 }
