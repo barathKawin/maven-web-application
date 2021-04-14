@@ -2,17 +2,15 @@ pipeline{
 
 agent any
 
-tools
-{
+tools {
   maven 'maven3.6.3'
-
 }
 
-triggers{
+triggers {
  pollSCM('* * * * *')
 }
 
-options{
+options {
     timestamps()
     buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2'))
 }
@@ -50,34 +48,10 @@ options{
   stage('DeployAppIntoTomcat')
  {
    steps{
-  sshagent(['2b7b0c6a-5eff-4f4a-82c3-3630f91c70b5']) {
-  sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.1.222.74:/opt/apache-tomcat-9.0.41/webapps/"
+  sshagent(['330432ff-d727-4ffe-9db7-65782a3166e9']) {
+  sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.234.186.239:/opt/apache-tomcat-9.0.45/webapps/"
   }
  }
  }
- 
   
- 
- }
- 
- post{
- 
- 
- success{
- mail bcc: 'devopstrainingblr@gmail.com', body: '''BuildOver!....
-
- Regards,
- Mithun Technologies,
- 9980923226''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'BuildOver!!', to: 'devopstrainingblr@gmail.com'
- }
- 
- failure{
- mail bcc: 'devopstrainingblr@gmail.com', body: '''BuildOver!....
-
- Regards,
- Mithun Technologies,
- 9980923226''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'BuildOver!!', to: 'devopstrainingblr@gmail.com'
- }
- 
- }
 }
