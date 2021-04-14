@@ -1,6 +1,8 @@
 node ('master') {
 
    def mavenHome = tool name: "maven3.6.3"
+   
+ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
  
  stage('git')
  {
