@@ -38,12 +38,12 @@ options {
 	 }
    }
    
-   stage('UploadArtifactintoNexus')
+   /* stage('UploadArtifactintoNexus')
    {
      steps{
 	  sh "mvn deploy"
 	 }
-   }
+   } */
    
   stage('DeployAppIntoTomcat')
  {
