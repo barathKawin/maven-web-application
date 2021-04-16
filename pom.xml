@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-appp</artifactId>
 	<packaging>war</packaging>
-	<version>3.0.0</version>
+	<version>4.0.0</version>
 	
 	<!-- <name>maven-web-application</name> -->
 
@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>application_final</finalName>
+		<finalName>application-nex</finalName>
 		
 		<plugins>
 			<plugin>
