@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-app</artifactId>
+	<artifactId>maven-web-appp</artifactId>
 	<packaging>war</packaging>
-	<version>1.0.2</version>
+	<version>3.0.0</version>
 	
 	<!-- <name>maven-web-application</name> -->
 
@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>application1</finalName>
+		<finalName>application_final</finalName>
 		
 		<plugins>
 			<plugin>
