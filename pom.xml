@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>application-done</artifactId>
+	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	/* <version></version> */
+	<version>1.1.1</version>
 	
-	<name>maven-web-app-name</name>
+	<name>maven-web-app</name>
 
 	<description>Maven Web Project for Java Project</description>
 
@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>application-done</finalName>
+		<finalName>maven-web-application-1.1.1</finalName>
 		
 		<plugins>
 			<plugin>
