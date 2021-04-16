@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-app</artifactId>
 	<packaging>war</packaging>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	
 	<!-- <name>maven-web-application</name> -->
 
@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>application</finalName>
+		<finalName>application1</finalName>
 		
 		<plugins>
 			<plugin>
