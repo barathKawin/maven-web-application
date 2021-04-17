@@ -28,7 +28,7 @@ stage('build')
  {
  sshagent(['330432ff-d727-4ffe-9db7-65782a3166e9']) {
     //sh 'sudo chmod o+wx /opt/apache-tomcat-9.0.45/webapps/'
-    sh "scp -o StrictHostKeyChecking=no target/maven-web-application-web-1.0.war rootr@65.2.33.177:/opt/apache-tomcat-9.0.45/webapps/"
+    sh "scp -o StrictHostKeyChecking=no target/maven-web-application-dev-1.0.war rootr@65.2.33.177:/opt/apache-tomcat-9.0.45/webapps/"
     }
   }
   
