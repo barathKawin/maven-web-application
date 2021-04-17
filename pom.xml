@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application-uat</finalName>
+		<finalName>maven-web-application-uat-1.0</finalName>
 		
 		<plugins>
 			<plugin>
