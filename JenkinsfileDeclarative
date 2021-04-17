@@ -38,20 +38,21 @@ options {
 	 }
    }
    
-   /* stage('UploadArtifactintoNexus')
+   stage('UploadArtifactintoNexus')
    {
      steps{
 	  sh "mvn deploy"
 	 }
-   } */
+   }
    
   stage('DeployAppIntoTomcat')
  {
    steps{
   sshagent(['330432ff-d727-4ffe-9db7-65782a3166e9']) {
-  sh "scp -o StrictHostKeyChecking=no target/maven-web-application-dev.war ec2-user@15.206.91.254:/opt/apache-tomcat-9.0.45/webapps/"
+  sh "scp -o StrictHostKeyChecking=no target/maven-web-application-1.1.1.war root@65.2.33.177:/opt/apache-tomcat-9.0.45/webapps/"
     } 
    }
  }
 }
 }
+© 2021 GitHub, Inc.
