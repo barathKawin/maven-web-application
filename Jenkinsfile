@@ -6,7 +6,8 @@ node ('master') {
  
  stage('git')
  {
-  git credentialsId: '932a8b1a-c0e0-4115-b5bf-18f6222a96bb', url: 'https://github.com/barathKawin/maven-web-application.git'
+  //git credentialsId: '932a8b1a-c0e0-4115-b5bf-18f6222a96bb', url: 'https://github.com/barathKawin/maven-web-application.git'
+  git branch: 'UAT', credentialsId: '932a8b1a-c0e0-4115-b5bf-18f6222a96bb', url: 'https://github.com/barathKawin/maven-web-application.git'
  }
  
 stage('build')
