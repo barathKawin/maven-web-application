@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>maven-web-application-dev</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
 	
@@ -111,7 +111,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application-master-1.0</finalName>
+		<finalName>maven-web-application-dev-1.0</finalName>
 		
 		<plugins>
 			<plugin>
