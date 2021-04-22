@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application-develop</artifactId>
+	<artifactId>maven-web-application-dev</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
 	
@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://65.0.125.254:9000/</sonar.host.url>
+		<sonar.host.url>http://65.1.147.224:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -97,20 +97,20 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>newrepo-release</name>
-	      <url>http://52.66.179.46:8081/repository/newrepo-release/</url>
+	      <name>maven-release-repo</name>
+	      <url>http://65.2.73.197:8081/repository/maven-release-repo/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>newrepo-snapshot</name>
-	      <url>http://52.66.179.46:8081/repository/newrepo-snapshot/</url>
+	      <name>maven-snap-repo</name>
+	      <url>http://65.2.73.197:8081/repository/maven-snap-repo/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application-develop-1.0</finalName>
+		<finalName>maven-web-application-dev-1.0</finalName>
 		
 		<plugins>
 			<plugin>
