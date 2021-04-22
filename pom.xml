@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application-master</artifactId>
+	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
 	
-	<name>maven-web-app</name>
+	<name>Dummy</name>
 
 	<description>Maven Web Project for Java Project</description>
 
@@ -21,9 +21,9 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<!-- <sonar.host.url>http://65.0.125.254:9000/</sonar.host.url>
+		<sonar.host.url>http://65.1.147.224:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password> -->
+		<sonar.password>admin</sonar.password>
 		<sonar.token>6ea8eed0b84554aa6ee2fc9ba6e3de13c9fa74c0</sonar.token>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -99,7 +99,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>newrepo-release</name>
-	      <url>http://52.66.179.46:8081/repository/newrepo-release/</url>
+	      <url>http://65.2.73.197:8081/repository/newrepo-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
