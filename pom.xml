@@ -99,19 +99,19 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>maven-release-repo</name>
-	      <url>http://65.2.73.197:8081/repository/maven-release-repo/</url>
+	      <url>http://65.1.85.44:8081/repository/maven-release-repo/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>maven-snap-repo</name>
-	      <url>http://65.2.73.197:8081/repository/maven-snap-repo/</url>
+	      <url>http://65.1.85.44:8081/repository/maven-snap-repo/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application-master-1.0</finalName>
+		<finalName>maven-web-application-barath</finalName>
 		
 		<plugins>
 			<plugin>
