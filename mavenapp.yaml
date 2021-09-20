@@ -17,12 +17,12 @@ spec:
       app: mavenapp
   template:
     metadata:
-      name: nginx-pod
+      name: maven-pod
       labels:
-        app: nginx
+        app: mavenapp
     spec:
       containers:
-      - name: mavenapp
+      - name: mavenappcontainer
         image: 241731696293.dkr.ecr.ap-south-1.amazonaws.com/mavenrepo:1
         ports:
         - containerPort: 80
