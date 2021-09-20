@@ -1,0 +1,28 @@
+  
+# Deployments  Rolling Update
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maven-deployment
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+       maxSurge: 1
+       maxUnavailable: 1
+  minReadySeconds: 30   
+  selector:
+    matchLabels:
+      app: mavenapp
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: mavenapp
+        image: 241731696293.dkr.ecr.ap-south-1.amazonaws.com/mavenrepo:1
+        ports:
+        - containerPort: 80
